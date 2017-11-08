@@ -1,14 +1,18 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "./airbnbLogo.svg";
-import find from "./inputFind.svg";
-import flexboxgrid from "../flexboxgrid2.css";
 import Findpicture from "./inputFind.svg";
+import "flexboxgrid2";
 
 const Container = styled.div`
   display: flex;
-  max-width: 1124px;
+  justify-content: space-between;
+  align-items: center;
+  width: 1124px;
   margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 0.5px solid rgba(72, 72, 72, 0.3);
 `;
 
 const Input = styled.input`
@@ -16,8 +20,8 @@ const Input = styled.input`
   height: 48px;
   padding-left: 52px;
   margin-left: 50px;
-  font: 16px "CuricularAir-Book", sans-serif;
-  line-hieght: 24px;
+  font: 16px/24px "CircularAir Book" "Helvetica Neue" "Helvetica" "Arial",
+    sans-serif;
   background-image: url(${Findpicture});
   background-repeat: no-repeat;
   background-position: 12px center;
@@ -26,21 +30,38 @@ const Input = styled.input`
   box-sizing: border-box;
 `;
 
-const Menu = styled.div`
+const LogoSearch = styled.div`
   display: flex;
   align-items: center;
+`;
+
+const Nav = styled.nav`display: flex;`;
+
+const MenuLink = styled.a`
+  display: inline-block;
+  padding: 0 3px;
+  margin-right: 8px;
+  text-decoration: none;
+  font: 14px/24px "CircularAir Book" "Helvetica Neue" "Helvetica" "Arial",
+    sans-serif;
 `;
 
 class Header extends React.Component {
   render() {
     return (
       <Container>
-        <Menu>
+        <LogoSearch>
           <a href="#">
             <img src={logo} alt="" />
           </a>
-        </Menu>
-        <Input type="text" placeholder="Try &quot;Miami&quot;" />
+          <Input type="text" placeholder="Try &quot;Miami&quot;" />
+        </LogoSearch>
+        <Nav>
+          <MenuLink href="#">Become a host</MenuLink>
+          <MenuLink href="#">Help</MenuLink>
+          <MenuLink href="#">Sign up</MenuLink>
+          <MenuLink href="#">Log in</MenuLink>
+        </Nav>
       </Container>
     );
   }
