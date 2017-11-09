@@ -27,6 +27,10 @@ h1 {
     sans-serif;
 }
 
+.h2 {
+  font-size: 32px;
+}
+
 .container {
   max-width: 982px;
   margin: 0 auto;

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header/Header";
 import Explore from "./Explore/Explore";
+import Experiences from "./Experiences/Experiences";
 import "./App.css";
 import styled from "styled-components";
 
@@ -11,6 +12,7 @@ class App extends Component {
         <Header />
         <div className="container">
           <Explore />
+          <Experiences />
         </div>
       </div>
     );
