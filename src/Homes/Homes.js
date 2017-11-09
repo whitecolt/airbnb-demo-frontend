@@ -5,6 +5,7 @@ import Card from "./HomesCard.js";
 import dreamy from "./Dreamy2x.png";
 import exclusive from "./Exclusive2x.png";
 import salentina from "./Salentina2x.png";
+import btn from "./button.svg";
 
 const Section = styled.section`
   margin-top: 66px;
@@ -32,6 +33,14 @@ export const SeeAll = styled.a`
 export const More = styled.div``;
 
 export const Arrow = styled.img``;
+
+export const BtnScroll = styled.a`
+  position: absolute;
+  top: 1050px;
+  left: 74%;
+  width: 40px;
+  height: 40px;
+`;
 
 export default () => (
   <Section>
@@ -74,5 +83,8 @@ export default () => (
         />
       </div>
     </div>
+    <BtnScroll href="#">
+      <img src={btn} alt="scroll" />
+    </BtnScroll>
   </Section>
 );

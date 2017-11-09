@@ -16,7 +16,6 @@ const HomesCard = styled.div`
 
 const Link = styled.a`
   text-decoration: none;
-
   color: #383838;
 `;
 
