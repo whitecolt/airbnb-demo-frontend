@@ -1,26 +1,26 @@
 import React from "react";
 import styled from "styled-components";
-import "flexboxgrid2";
-import apparts from "./Apparts2x.png";
 
-const ImgExplore = styled.img`
+const Img = styled.img`
   width: 96px;
   height: 72px;
 `;
 
-const ItemExplore = styled.div`
+const ExploreTitle = styled.h3`margin-left: 24px;`;
+
+const ExploreCard = styled.a`
   display: flex;
   border: 1px solid rgba(72, 72, 72, 0.2);
   align-items: center;
+  text-decoration: none;
+  border-radius: 4px;
 `;
 
-const H3 = styled.h3`margin-left: 24px;`;
-
-export default function() {
+export default props => {
   return (
-    <ItemExplore>
-      <ImgExplore src={apparts} alt="apparts.png" />
-      <H3>Homes</H3>
-    </ItemExplore>
+    <ExploreCard>
+      <Img src={props.img} alt={props.name} />
+      <ExploreTitle>{props.name}</ExploreTitle>
+    </ExploreCard>
   );
-}
+};
