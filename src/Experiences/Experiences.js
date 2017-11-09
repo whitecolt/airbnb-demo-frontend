@@ -7,21 +7,27 @@ import mountain from "./Mountain2x.png";
 import salsa from "./Salsa2x.png";
 import star from "./star.svg";
 import arrow from "./Arrow.svg";
-import seelink from "./See all.svg";
+import { SeeAll, Title, More, Arrow } from "../Homes/Homes";
 
 const H2 = styled.h2`
   font: bold 32px/34px "CircularAir Bold", Helvetica Neue, Helvetica, Arial,
     sans-serif;
+`;
+
+const Section = styled.div`
   margin-top: 48px;
   margin-bottom: 24px;
 `;
 
-const SeeAll = styled.a``;
-
 export default () => (
-  <div className="Section">
-    <H2>Experiences</H2>
-    <SeeAll href="#">See All</SeeAll>
+  <Section>
+    <Title>
+      <H2>Experiences</H2>
+      <More>
+        <SeeAll href="#">See All</SeeAll>
+        <Arrow src={arrow} />
+      </More>
+    </Title>
 
     <div className="row">
       <div className="col-3">
@@ -61,5 +67,5 @@ export default () => (
         />
       </div>
     </div>
-  </div>
+  </Section>
 );
