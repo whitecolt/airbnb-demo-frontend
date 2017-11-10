@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Card from "./DestinationCard.js";
+import Card from "./Card.js";
 import miami from "./Miami2x.png";
 import tokyo from "./Tokyo2x.png";
 import capetown from "./Cape Town2x.png";

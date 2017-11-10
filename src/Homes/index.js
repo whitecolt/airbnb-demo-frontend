@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import arrow from "./Arrow.svg";
-import Card from "./HomesCard.js";
+import Card from "./Card.js";
 import dreamy from "./Dreamy2x.png";
 import exclusive from "./Exclusive2x.png";
 import salentina from "./Salentina2x.png";
@@ -17,7 +17,7 @@ export const H2 = styled.h2`
   font: 32px/34px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 `;
 
-export const Title = styled.div`
+export const Inscription = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,13 +46,13 @@ export const BtnScroll = styled.a`
 
 export default () => (
   <Section>
-    <Title>
+    <Inscription>
       <H2>Homes</H2>
       <More>
         <SeeAll href="#">See All</SeeAll>
         <Arrow src={arrow} />
       </More>
-    </Title>
+    </Inscription>
     <div className="row">
       <div className="col-4">
         <Card

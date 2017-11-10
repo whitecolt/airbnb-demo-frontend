@@ -31,7 +31,7 @@ export default function() {
                   <option>English</option>
                 </Select>
                 <Select>
-                  <option>Unated States dollar</option>
+                  <option>United States dollar</option>
                 </Select>
               </Form>
             </div>

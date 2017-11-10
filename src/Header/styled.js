@@ -3,7 +3,7 @@ import styled from "styled-components";
 import logo from "./airbnbLogo.svg";
 import Findpicture from "./inputFind.svg";
 
-export const Header = styled.div`
+export const Header = styled.header`
   display: flex;
   align-items: center;
   padding-top: 16px;

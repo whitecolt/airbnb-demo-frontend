@@ -3,7 +3,7 @@ import styled from "styled-components";
 import apparts from "./Apparts2x.png";
 import boat from "./Boat2x.png";
 import restaurants from "./Restaurants2x.png";
-import ExploreCard from "./ExploreCard";
+import ExploreCard from "./Card";
 
 const H1 = styled.h1`
   font: 32px/34px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;

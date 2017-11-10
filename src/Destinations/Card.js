@@ -25,9 +25,10 @@ const Name = styled.p`
 export default props => {
   return (
     <DestCard>
-      <Link href="#" />
-      <Img src={props.img} alt={props.name} />
-      <Name>{props.name}</Name>
+      <Link href="#">
+        <Img src={props.img} alt={props.name} />
+        <Name>{props.name}</Name>
+      </Link>
     </DestCard>
   );
 };

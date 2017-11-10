@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import Card from "./ReservationCard";
+import Card from "./Card";
 import arrow from "./Arrow.svg";
-import { Title, SeeAll, More, H2 } from "../Homes/Homes";
 import chum from "./Chumleys2x.png";
 import han from "./Hanjan2x.png";
 import meat from "./Primemeats2x.png";
@@ -11,6 +10,27 @@ import sea from "./Seaprice2x.png";
 const Section = styled.section`
   margin-top: 48px;
   margin-bottom: 48px;
+`;
+
+export const Inscription = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+`;
+
+export const SeeAll = styled.a`
+  text-decoration: none;
+  font: 14px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  color: #383838;
+  margin-right: 8px;
+`;
+
+export const More = styled.div``;
+
+export const H2 = styled.h2`
+  font: 32px/34px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 `;
 
 export const Arrow = styled.img``;
@@ -25,13 +45,13 @@ const BtnScroll = styled.a`
 
 export default () => (
   <Section>
-    <Title>
+    <Inscription>
       <H2>Popular reservations around the world</H2>
       <More>
         <SeeAll href="#">See All</SeeAll>
         <Arrow src={arrow} />
       </More>
-    </Title>
+    </Inscription>
     <div className="row">
       <div className="col-3">
         <Card

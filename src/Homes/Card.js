@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Stars, Price } from "../Experiences/ExperiencesCard";
+import { Stars, Price } from "../Experiences/Card";
 import star from "./star.svg";
 
 const Img = styled.img`
