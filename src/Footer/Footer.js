@@ -27,11 +27,11 @@ export default function() {
           <div className="row">
             <div className="col-4">
               <Form action="post">
-                <Select name="language" id="languageSelect">
-                  <option value="value1">English</option>
+                <Select>
+                  <option>English</option>
                 </Select>
-                <Select name="currency" id="currencySelect">
-                  <option value="value1">Unated States dollar</option>
+                <Select>
+                  <option>Unated States dollar</option>
                 </Select>
               </Form>
             </div>
