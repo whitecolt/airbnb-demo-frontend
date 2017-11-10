@@ -45,6 +45,7 @@ export const MenuLink = styled.a`
   padding: 0 3px;
   margin-right: 8px;
   text-decoration: none;
-  font: 14px/24px "CircularAir Book" "Helvetica Neue" "Helvetica" "Arial",
+  color: #383838;
+  font: 14px/24px "CircularAir Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
 `;

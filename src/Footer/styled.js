@@ -36,6 +36,7 @@ export const NavTitle = styled.span`
   margin-bottom: 12px;
   font: 15px "Circular", sans-serif;
   font-weight: bold;
+  color: #383838;
 `;
 
 export const Link = styled.a`

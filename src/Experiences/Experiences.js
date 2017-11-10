@@ -7,15 +7,21 @@ import mountain from "./Mountain2x.png";
 import salsa from "./Salsa2x.png";
 import star from "./star.svg";
 import arrow from "./Arrow.svg";
-import { SeeAll, Title, More, Arrow } from "../Homes/Homes";
+import { SeeAll, More, Arrow } from "../Homes/Homes";
 
 const H2 = styled.h2`
-  font: bold 32px/34px "CircularAir Bold", Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+  font: 32px/34px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 `;
 
 const Section = styled.div`
   margin-top: 48px;
+  margin-bottom: 24px;
+`;
+
+const Title = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 24px;
 `;
 
@@ -28,7 +34,6 @@ export default () => (
         <Arrow src={arrow} />
       </More>
     </Title>
-
     <div className="row">
       <div className="col-3">
         <Card

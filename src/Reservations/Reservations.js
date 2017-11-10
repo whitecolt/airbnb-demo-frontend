@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Card from "./ReservationCard";
 import arrow from "./Arrow.svg";
-import { Title, SeeAll, More } from "../Homes/Homes";
+import { Title, SeeAll, More, H2 } from "../Homes/Homes";
 import chum from "./Chumleys2x.png";
 import han from "./Hanjan2x.png";
 import meat from "./Primemeats2x.png";
@@ -14,11 +14,6 @@ const Section = styled.section`
 `;
 
 export const Arrow = styled.img``;
-
-const H2 = styled.h2`
-  font: bold 32px/34px "CircularAir Bold", Helvetica Neue, Helvetica, Arial,
-    sans-serif;
-`;
 
 const BtnScroll = styled.a`
   position: absolute;

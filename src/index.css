@@ -20,15 +20,11 @@ body {
   margin: 0;
   padding: 0;
   font-family: "CircularAir Light", sans-serif;
+  color: #383838;
 }
 
-h1 {
-  font-family: "CircularAir Bold" "Helvetica Neue" "Helvetica" "Arial",
-    sans-serif;
-}
-
-.h2 {
-  font-size: 32px;
+h2 {
+  margin: 0;
 }
 
 .container {

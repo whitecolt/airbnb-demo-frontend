@@ -44,7 +44,7 @@ const Reviews = styled.span`font: 12px/14px "Circular Air", sans-serif;`;
 export default props => {
   return (
     <ExperienceCard>
-      <Link>
+      <Link href="#">
         <Img src={props.img} alt={props.name} />
         <Info>
           <Price>{props.price}</Price>

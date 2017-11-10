@@ -8,19 +8,19 @@ import salentina from "./Salentina2x.png";
 import btn from "./button.svg";
 
 const Section = styled.section`
-  margin-top: 66px;
+  margin-top: 48px;
   margin-bottom: 24px;
 `;
 
-const H2 = styled.h2`
-  font: bold 32px/34px "CircularAir Bold", Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+export const H2 = styled.h2`
+  font: 32px/34px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 `;
 
 export const Title = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 24px;
 `;
 
 export const SeeAll = styled.a`

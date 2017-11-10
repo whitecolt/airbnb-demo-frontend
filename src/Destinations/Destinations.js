@@ -14,8 +14,8 @@ const Section = styled.section`
 `;
 
 const H2 = styled.h2`
-  font: bold 32px/34px "CircularAir Bold", Helvetica Neue, Helvetica, Arial,
-    sans-serif;
+  font: 32px/34px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin-bottom: 24px;
 `;
 
 export default () => (
