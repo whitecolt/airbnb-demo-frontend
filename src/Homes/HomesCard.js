@@ -19,7 +19,9 @@ const Link = styled.a`
   color: #383838;
 `;
 
-const Name = styled.span`font: Bold 15px/18px "CircularAir", sans-serif;`;
+const Name = styled.span`
+  font: 15px/18px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+`;
 
 const Info = styled.p`
   margin-top: 8px;
@@ -29,7 +31,8 @@ const Info = styled.p`
 
 const Details = styled.p`
   margin-top: 2px;
-  font: 15px/18px "CircularAir", sans-serif;
+  font: 15px/18px "Circular Air Light", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
   color: #383838;
   margin-bottom: 8px;
   flex-basis: 100%;
@@ -43,7 +46,8 @@ const Access = styled.span`
 const Beds = styled.span`display: inline-block;`;
 
 const Rank = styled.span`
-  font: 12px/14px "CircularAir", sans-serif;
+  font: 12px/14px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
   color: #383838;
 `;
 

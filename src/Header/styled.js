@@ -23,7 +23,7 @@ export const Input = styled.input`
   height: 48px;
   padding-left: 52px;
   margin-left: 50px;
-  font: 16px/24px "CircularAir Book" "Helvetica Neue" "Helvetica" "Arial",
+  font: 16px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
   background-image: url(${Findpicture});
   background-repeat: no-repeat;
@@ -46,6 +46,6 @@ export const MenuLink = styled.a`
   margin-right: 8px;
   text-decoration: none;
   color: #383838;
-  font: 14px/24px "CircularAir Book", "Helvetica Neue", "Helvetica", "Arial",
+  font: 14px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
 `;

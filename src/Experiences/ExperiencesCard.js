@@ -17,14 +17,14 @@ const Link = styled.a`
   color: #383838;
 `;
 
-const Name = styled.span``;
+const Name = styled.span`
+  font: 15px/18px "Circular Air Light", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+`;
 
 export const Price = styled.span`
   display: inline-block;
-  font-size: 15px;
-  line-height: 18px;
-  font-family: "CircularAir", Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font: 15px/18px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   margin-right: 3px;
 `;
 
@@ -39,7 +39,7 @@ export const Stars = styled.img`
   height: 12px;
   margin-right: 8px;
 `;
-const Reviews = styled.span`font: 12px/14px "Circular Air", sans-serif;`;
+const Reviews = styled.span`font: 12px/14px "Circular Air Book", sans-serif;`;
 
 export default props => {
   return (

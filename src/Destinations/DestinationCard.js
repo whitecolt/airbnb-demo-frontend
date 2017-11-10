@@ -19,7 +19,7 @@ const Link = styled.a`
 const Name = styled.p`
   margin-top: 8px;
   color: #383838;
-  font: Bold 15px/18px "CircularAir", sans-serif;
+  font: 15px/18px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 `;
 
 export default props => {

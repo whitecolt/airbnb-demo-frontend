@@ -19,12 +19,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "CircularAir Light", sans-serif;
+  font-family: "Circular Air Light", sans-serif;
   color: #383838;
 }
 
 h2 {
   margin: 0;
+}
+
+h3 {
+  font: 17px/20px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 .container {

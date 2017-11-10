@@ -17,7 +17,7 @@ export default function() {
       <H1>Explore Airbnb</H1>
       <div className="row">
         <div className="col-4">
-          <ExploreCard name="Home" to="" img={apparts} />
+          <ExploreCard name="Homes" to="" img={apparts} />
         </div>
         <div className="col-4">
           <ExploreCard name="Experiences" to="" img={boat} />

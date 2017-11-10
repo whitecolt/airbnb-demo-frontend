@@ -20,19 +20,20 @@ const Link = styled.a`
 const Kitchen = styled.p`
   margin-top: 12px;
   margin-bottom: 2px;
-  font: Bold 10px/12px "CircularAir", sans-serif;
+  font: 10px/12px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
 `;
 
 const Title = styled.p`
   margin-top: 2px;
   margin-bottom: 4px;
-  font: Bold 18px/21px "CircularAir", sans-serif;
+  font: 18px/21px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 `;
 
 const Check = styled.p`
   margin-top: 0;
-  font: 18px/21px "CircularAir", sans-serif;
+  font: 18px/21px "Circular Air Light", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
   opacity: 0.9;
   color: #383838;
 `;
