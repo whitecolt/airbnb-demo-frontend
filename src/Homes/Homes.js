@@ -6,6 +6,7 @@ import dreamy from "./Dreamy2x.png";
 import exclusive from "./Exclusive2x.png";
 import salentina from "./Salentina2x.png";
 import btn from "./button.svg";
+import nextPage from "./next-page.svg";
 
 const Section = styled.section`
   margin-top: 48px;
@@ -25,7 +26,8 @@ export const Title = styled.div`
 
 export const SeeAll = styled.a`
   text-decoration: none;
-  font: 14px/24px "Circular Air Book", sans-serif;
+  font: 14px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
   color: #383838;
   margin-right: 8px;
 `;
@@ -36,8 +38,8 @@ export const Arrow = styled.img``;
 
 export const BtnScroll = styled.a`
   position: absolute;
-  top: 1050px;
-  left: 74%;
+  top: 55%;
+  left: 73.5%;
   width: 40px;
   height: 40px;
 `;
@@ -84,7 +86,7 @@ export default () => (
       </div>
     </div>
     <BtnScroll href="#">
-      <img src={btn} alt="scroll" />
+      <img src={nextPage} alt="scroll" />
     </BtnScroll>
   </Section>
 );

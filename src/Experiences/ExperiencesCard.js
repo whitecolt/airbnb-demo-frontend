@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import star from "./star.svg";
-import scroll from "./scroll.svg";
 
 const Img = styled.img`
   width: 225px;
@@ -42,20 +41,6 @@ export const Stars = styled.img`
   margin-right: 8px;
 `;
 const Reviews = styled.span`font: 12px/14px "Circular Air Book", sans-serif;`;
-
-export const Scroll = styled.a`
-  width: 40px;
-  height: 40px;
-  background: url(${scroll}) center no-repeat;
-  border: 0.5px solid rgba(72, 72, 72, 0.2);
-  box-sizing: border-box;
-  box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.16);
-  border-radius: 50%;
-  position: absolute;
-  z-index: 100;
-  top: 30%;
-  left: 98%;
-`;
 
 export default props => {
   return (
