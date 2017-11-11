@@ -46,7 +46,7 @@ export default () => (
       </More>
     </Inscription>
     <div className="row">
-      <div className="col-3">
+      <div className="col-lg-3">
         <Card
           name="Forest therapy"
           img={forest}
@@ -54,7 +54,7 @@ export default () => (
           rating="44 reviews"
         />
       </div>
-      <div className="col-3">
+      <div className="col-lg-3">
         <Card
           name="Whale watching"
           img={whale}
@@ -62,7 +62,7 @@ export default () => (
           rating="46 reviews"
         />
       </div>
-      <div className="col-3">
+      <div className="col-lg-3">
         <Card
           name="Table Mountain Summit, Cable Car Down"
           img={mountain}
@@ -70,7 +70,7 @@ export default () => (
           rating="44 reviews"
         />
       </div>
-      <div className="col-3">
+      <div className="col-lg-3">
         <Card name="Salsa Night" img={salsa} price="$50" rating="44 reviews" />
       </div>
     </div>

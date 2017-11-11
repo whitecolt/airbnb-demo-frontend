@@ -54,7 +54,7 @@ export default () => (
       </More>
     </Inscription>
     <div className="row">
-      <div className="col-4">
+      <div className="col-lg-4">
         <Card
           name="La Salentina, see, nature & relax"
           img={salentina}
@@ -64,7 +64,7 @@ export default () => (
           rank="97  Superhost"
         />
       </div>
-      <div className="col-4">
+      <div className="col-lg-4">
         <Card
           name="Your private 3 bedr. riad and exclusi..."
           img={exclusive}
@@ -74,7 +74,7 @@ export default () => (
           rank="161  Superhost"
         />
       </div>
-      <div className="col-4">
+      <div className="col-lg-4">
         <Card
           name="Dreamy Tropical Tree House"
           img={dreamy}

@@ -25,7 +25,7 @@ export default function() {
       <div className="container">
         <FooterWrap>
           <div className="row">
-            <div className="col-4">
+            <div className="col-lg-4">
               <Form action="post">
                 <Select>
                   <option>English</option>
@@ -36,7 +36,7 @@ export default function() {
               </Form>
             </div>
 
-            <div className="col-3">
+            <div className="col-lg-3">
               <Nav>
                 <NavTitle>Airbnb</NavTitle>
                 <Link href="#">About us</Link>
@@ -48,7 +48,7 @@ export default function() {
               </Nav>
             </div>
 
-            <div className="col-3">
+            <div className="col-lg-3">
               <Nav>
                 <NavTitle>Discover</NavTitle>
                 <Link href="#">Trust & Safety</Link>
@@ -61,7 +61,7 @@ export default function() {
               </Nav>
             </div>
 
-            <div className="col-2">
+            <div className="col-lg-2">
               <Nav>
                 <NavTitle>Hosting</NavTitle>
                 <Link href="#">Why Host</Link>

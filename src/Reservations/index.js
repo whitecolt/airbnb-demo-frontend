@@ -53,7 +53,7 @@ export default () => (
       </More>
     </Inscription>
     <div className="row">
-      <div className="col-3">
+      <div className="col-lg-3">
         <Card
           img={chum}
           name="Chumley's"
@@ -61,7 +61,7 @@ export default () => (
           check="About $60 per person"
         />
       </div>
-      <div className="col-3">
+      <div className="col-lg-3">
         <Card
           img={han}
           name="Hanjan"
@@ -69,7 +69,7 @@ export default () => (
           check="About $50 per person"
         />
       </div>
-      <div className="col-3">
+      <div className="col-lg-3">
         <Card
           img={meat}
           name="Prime Meats"
@@ -77,7 +77,7 @@ export default () => (
           check="About $55 per person"
         />
       </div>
-      <div className="col-3">
+      <div className="col-lg-3">
         <Card
           img={sea}
           name="Seaprice"

@@ -16,13 +16,13 @@ export default function() {
     <div className="Section">
       <H1>Explore Airbnb</H1>
       <div className="row">
-        <div className="col-4">
+        <div className="col-lg-4">
           <ExploreCard name="Homes" to="" img={apparts} />
         </div>
-        <div className="col-4">
+        <div className="col-lg-4">
           <ExploreCard name="Experiences" to="" img={boat} />
         </div>
-        <div className="col-4">
+        <div className="col-lg-4">
           <ExploreCard name="Restaurants" to="" img={restaurants} />
         </div>
       </div>

@@ -22,22 +22,22 @@ export default () => (
   <Section>
     <H2>Featured destinations</H2>
     <div className="row">
-      <div className="col-2">
+      <div className="col-lg-2">
         <Card name="Paris" img={paris} />
       </div>
-      <div className="col-2">
+      <div className="col-lg-2">
         <Card name="Miami" img={miami} />
       </div>
-      <div className="col-2">
+      <div className="col-lg-2">
         <Card name="Tokyo" img={tokyo} />
       </div>
-      <div className="col-2">
+      <div className="col-lg-2">
         <Card name="Cape town" img={capetown} />
       </div>
-      <div className="col-2">
+      <div className="col-lg-2">
         <Card name="Seoul" img={seoul} />
       </div>
-      <div className="col-2">
+      <div className="col-lg-2">
         <Card name="Los Angeles" img={la} />
       </div>
     </div>
