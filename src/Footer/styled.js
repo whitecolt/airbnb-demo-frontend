@@ -7,7 +7,6 @@ export const Footer = styled.footer`
 
   @media only screen and (min-width: 768px) {
     padding-top: 48px;
-    padding-bottom: 35px;
   }
 `;
 
@@ -119,6 +118,9 @@ export const Info = styled.nav`
   align-items: center;
   justify-content: flex-start;
   flex-grow: 0;
+  font: 12px/14px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+
   @media only screen and (min-width: 768px) {
     font-size: 15px;
     line-height: 18px;
@@ -129,14 +131,15 @@ export const Logo = styled.img`margin-right: 12px;`;
 
 export const InfoLink = styled.a`
   margin-right: 12px;
-  @media only screen and (min-width: 768px) {
-    margin-right: 16px;
-  }
-
   text-decoration: none;
   color: #636363;
   font: 12px/14px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
+
+  @media only screen and (min-width: 992px) {
+    margin-right: 16px;
+  }
+
   @media only screen and (min-width: 768px) {
     font-size: 15px;
     line-height: 18px;

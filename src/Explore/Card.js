@@ -14,6 +14,7 @@ const Img = styled.img`
 const ExploreTitle = styled.h3`
   margin-left: 24px;
   font: 12px/14px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
   @media only screen and (min-width: 768px) {
     font-size: 17px;
     line-height: 20px;
@@ -23,6 +24,8 @@ const ExploreTitle = styled.h3`
 const ExploreCard = styled.a`
   display: block;
   box-sizing: border-box;
+  text-decoration: none;
+  color: #383838;
   border: 1px solid rgba(72, 72, 72, 0.2);
 
   @media only screen and (min-width: 768px) {
@@ -32,7 +35,7 @@ const ExploreCard = styled.a`
 
 export default props => {
   return (
-    <ExploreCard>
+    <ExploreCard href="#">
       <Img src={props.img} alt={props.name} />
       <ExploreTitle>{props.name}</ExploreTitle>
     </ExploreCard>

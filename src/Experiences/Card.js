@@ -19,7 +19,8 @@ const Img = styled.img`
 const ExperienceCard = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: center
+  position: relative;
 `;
 
 const Link = styled.a`
@@ -33,6 +34,7 @@ export const Price = styled.span`
   display: inline-block;
   font: 13px/15px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   margin-right: 3px;
+
   @media only screen and (min-width: 768px) {
     font-size: 15px;
     line-height: 18px;
@@ -45,6 +47,7 @@ const Info = styled.p`
   flex-basis: 100%;
   font: 13px/15px "Circular Air Light", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
+
   @media only screen and (min-width: 768px) {
     font-size: 15px;
     line-height: 18px;

@@ -11,6 +11,7 @@ import la from "./Los Angeles2x.png";
 const Section = styled.section`
   margin-top: 48px;
   margin-bottom: 40px;
+
   @media only screen and (min-width: 768px) {
     margin-top: 48px;
     margin-bottom: 64px;

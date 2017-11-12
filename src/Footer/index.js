@@ -2,7 +2,6 @@ import React from "react";
 import {
   Footer,
   FooterWrap,
-  Form,
   Select,
   Nav,
   NavTitle,
@@ -82,26 +81,34 @@ export default function() {
             </div>
           </div>
         </FooterWrap>
-        <Basement>
-          <Inc>
-            <Logo src={logo} alt="logo.svg" /> © Airbnb Inc.
-          </Inc>
 
-          <Info>
-            <InfoLink href="#">Terms</InfoLink>
-            <InfoLink href="#">Privacy</InfoLink>
-            <InfoLink href="#">Site Map</InfoLink>
-            <InfoLink href="#">
-              <img src={fb} alt="facebook" />
-            </InfoLink>
-            <InfoLink href="#">
-              <img src={tw} alt="twitter" />
-            </InfoLink>
-            <InfoLink href="#">
-              <img src={inst} alt="instagram" />
-            </InfoLink>
-          </Info>
-        </Basement>
+        <div className="row">
+          <div className="col-md-12">
+            <Basement>
+              <div className="col-md-3">
+                <Inc>
+                  <Logo src={logo} alt="logo.svg" /> © Airbnb Inc.
+                </Inc>
+              </div>
+              <div className="col-md-5">
+                <Info>
+                  <InfoLink href="#">Terms</InfoLink>
+                  <InfoLink href="#">Privacy</InfoLink>
+                  <InfoLink href="#">Site Map</InfoLink>
+                  <InfoLink href="#">
+                    <img src={fb} alt="facebook" />
+                  </InfoLink>
+                  <InfoLink href="#">
+                    <img src={tw} alt="twitter" />
+                  </InfoLink>
+                  <InfoLink href="#">
+                    <img src={inst} alt="instagram" />
+                  </InfoLink>
+                </Info>
+              </div>
+            </Basement>
+          </div>
+        </div>
       </div>
     </Footer>
   );

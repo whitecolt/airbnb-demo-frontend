@@ -5,17 +5,18 @@ import Card from "./Card.js";
 import dreamy from "./Dreamy2x.png";
 import exclusive from "./Exclusive2x.png";
 import salentina from "./Salentina2x.png";
-import btn from "./button.svg";
-import nextPage from "./next-page.svg";
 
 const Section = styled.section`
   margin-top: 36px;
   margin-bottom: 16px;
+  position: relative;
+
   @media only screen and (min-width: 768px) {
     margin-top: 36px;
     margin-bottom: 24px;
   }
 `;
+
 const H2 = styled.h2`
   font: 24px/28px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
@@ -30,6 +31,7 @@ export const Description = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
+
   @media only screen and (min-width: 768px) {
     margin-bottom: 24px;
   }
@@ -51,14 +53,6 @@ export const SeeAll = styled.a`
 export const More = styled.div``;
 
 export const Arrow = styled.img``;
-
-export const BtnScroll = styled.a`
-  position: absolute;
-  top: 55%;
-  left: 73.5%;
-  width: 40px;
-  height: 40px;
-`;
 
 const ScrollContainer = styled.div`
   overflow-x: scroll;
@@ -107,9 +101,6 @@ export default () => (
           />
         </div>
       </div>
-      <BtnScroll href="#">
-        <img src={nextPage} alt="scroll" />
-      </BtnScroll>
     </ScrollContainer>
   </Section>
 );

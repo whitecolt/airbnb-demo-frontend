@@ -9,6 +9,7 @@ import arrow from "./arrow.svg";
 
 const H2 = styled.h2`
   font: 24px/28px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
   @media only screen and (min-width: 768px) {
     font-size: 32px;
     line-height: 34px;
@@ -34,6 +35,8 @@ export const Arrow = styled.img``;
 
 const Section = styled.section`
   margin-top: 40px;
+  position: relative;
+
   @media only screen and (min-width: 768px) {
     margin-top: 48px;
     margin-bottom: 24px;
@@ -45,15 +48,13 @@ const Description = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
+
   @media only screen and (min-width: 768px) {
     margin-bottom: 24px;
   }
 `;
 
-const ScrollContainer = styled.div`
-  overflow-x: scroll;
-  overflow-y: hidden;
-`;
+const ScrollContainer = styled.div`overflow-x: scroll;`;
 
 export default () => (
   <Section>
