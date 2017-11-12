@@ -25,6 +25,7 @@ export const SeeAll = styled.a`
     sans-serif;
   color: #383838;
   margin-right: 8px;
+  white-space: nowrap;
 
   @media only screen and (min-width: 768px) {
     font-size: 12px;

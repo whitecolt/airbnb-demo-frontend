@@ -3,7 +3,6 @@ import arrowdown from "./arrow-down.svg";
 
 export const Footer = styled.footer`
   padding-top: 16px;
-  padding-bottom: 24px;
   border-top: 1px solid rgba(72, 72, 72, 0.3);
 
   @media only screen and (min-width: 768px) {
@@ -13,9 +12,13 @@ export const Footer = styled.footer`
 `;
 
 export const FooterWrap = styled.div`
-  padding-bottom: 24px;
+  padding-bottom: 16px;
   @media only screen and (min-width: 768px) {
     padding-bottom: 48px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    padding-bottom: 36px;
   }
 `;
 
@@ -85,11 +88,15 @@ export const Buttons = styled.div`display: block;`;
 export const Basement = styled.div`
   display: flex;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 16px;
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid rgba(72, 72, 72, 0.3);
   flex-wrap: wrap;
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 35px;
+  }
 `;
 
 export const Inc = styled.div`
@@ -121,10 +128,17 @@ export const Info = styled.nav`
 export const Logo = styled.img`margin-right: 12px;`;
 
 export const InfoLink = styled.a`
-  margin-right: 16px;
+  margin-right: 12px;
+  @media only screen and (min-width: 768px) {
+    margin-right: 16px;
+  }
 
   text-decoration: none;
   color: #636363;
-  font: 15px/18px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
+  font: 12px/14px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
+  @media only screen and (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 `;

@@ -26,9 +26,9 @@ export default function() {
       <div className="container">
         <FooterWrap>
           <div className="row">
-            <div className="col-xs-12 col-md-4 col-lg-4">
+            <div className="col-xs-12 col-md-3">
               <div className="row">
-                <div className="col-xs-6">
+                <div className="col-xs-6 col-md-12">
                   <Buttons>
                     <Select>
                       <option>English</option>
@@ -36,7 +36,7 @@ export default function() {
                   </Buttons>
                 </div>
 
-                <div className="col-xs-6">
+                <div className="col-xs-6 col-md-12">
                   <Buttons>
                     <Select>
                       <option>United States dollar</option>
@@ -45,10 +45,8 @@ export default function() {
                 </div>
               </div>
             </div>
-          </div>
 
-          <div className="row">
-            <div className="col-md-2  col-lg-2">
+            <div className="col-md-offset-1 col-md-2  col-lg-2">
               <Nav>
                 <NavTitle>Airbnb</NavTitle>
                 <Link href="#">About us</Link>
