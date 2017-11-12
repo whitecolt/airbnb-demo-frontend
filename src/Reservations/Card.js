@@ -2,8 +2,17 @@ import React from "react";
 import styled from "styled-components";
 
 const Img = styled.img`
-  width: 229px;
-  height: 164px;
+  width: 144px;
+  height: 108px;
+  @media (min-width: 768px) {
+    width: 240px;
+    height: 164px;
+  }
+
+  @media (min-width: 992px) {
+    width: 229px;
+    height: 164px;
+  }
 `;
 
 const ReservCard = styled.div`
@@ -20,22 +29,36 @@ const Link = styled.a`
 const Kitchen = styled.p`
   margin-top: 12px;
   margin-bottom: 2px;
-  font: 10px/12px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: 8px/9px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   text-transform: uppercase;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 10px;
+    line-height: 12px;
+  }
 `;
 
 const Title = styled.p`
   margin-top: 2px;
   margin-bottom: 4px;
-  font: 18px/21px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: 14px/16px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  @media only screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
 `;
 
 const Check = styled.p`
   margin-top: 0;
-  font: 18px/21px "Circular Air Light", "Helvetica Neue", "Helvetica", "Arial",
+  font: 12px/14px "Circular Air Light", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
   opacity: 0.9;
   color: #383838;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 18px;
+    line-height: 21px;
+  }
 `;
 
 export default props => {

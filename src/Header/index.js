@@ -1,6 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-import { Header, Wrap, Input, LogoSearch, Nav, MenuLink } from "./styled";
+import {
+  Header,
+  Wrap,
+  Input,
+  LogoSearch,
+  Nav,
+  MenuLink,
+  MenuBtn
+} from "./styled";
 import logo from "./airbnbLogo.svg";
 
 export default function() {
@@ -12,8 +20,10 @@ export default function() {
             <a href="#">
               <img src={logo} alt="" />
             </a>
+            <MenuBtn />
             <Input type="text" placeholder="Try &quot;Miami&quot;" />
           </LogoSearch>
+
           <Nav>
             <MenuLink href="#">Become a host</MenuLink>
             <MenuLink href="#">Help</MenuLink>

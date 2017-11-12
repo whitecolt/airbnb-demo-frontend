@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import logo from "./airbnbLogo.svg";
 import Findpicture from "./inputFind.svg";
+import arrow from "./arrowdown.svg";
 
 export const Header = styled.header`
   display: flex;
@@ -19,11 +20,11 @@ export const Wrap = styled.div`
 `;
 
 export const Input = styled.input`
-  width: 392px;
+  width: 250px;
   height: 48px;
-  padding-left: 52px;
-  margin-left: 50px;
-  font: 16px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
+  padding-left: 35px;
+  margin-left: 8px;
+  font: 14px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
   background-image: url(${Findpicture});
   background-repeat: no-repeat;
@@ -31,6 +32,19 @@ export const Input = styled.input`
   border: 1px solid rgba(72, 72, 72, 0.2);
   border-radius: 5px;
   box-sizing: border-box;
+
+  @media only screen and (min-width: 768px) {
+    width: 432px;
+    padding-left: 49px;
+    margin-left: 17px;
+    font-weight: 16px;
+    line-height: 24px;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 392px;
+    padding-left: 49px;
+    margin-left: 53px;
+  }
 `;
 
 export const LogoSearch = styled.div`
@@ -38,7 +52,12 @@ export const LogoSearch = styled.div`
   align-items: center;
 `;
 
-export const Nav = styled.nav`display: flex;`;
+export const Nav = styled.nav`
+  display: none;
+  @media only screen and (min-width: 769px) {
+    display: flex;
+  }
+`;
 
 export const MenuLink = styled.a`
   display: inline-block;
@@ -48,4 +67,18 @@ export const MenuLink = styled.a`
   color: #383838;
   font: 14px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
+`;
+
+export const MenuBtn = styled.button`
+  display: block;
+  border: none;
+  width: 11px;
+  height: 6px;
+  background: url(${arrow}) no-repeat 0 0;
+  background-size: cover;
+  margin-left: 7px;
+
+  @media only screen and (min-width: 769px) {
+    display: none;
+  }
 `;

@@ -12,7 +12,7 @@ const Section = styled.section`
   margin-bottom: 48px;
 `;
 
-export const Inscription = styled.div`
+export const Description = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,16 +21,25 @@ export const Inscription = styled.div`
 
 export const SeeAll = styled.a`
   text-decoration: none;
-  font: 14px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
+  font: 12px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
   color: #383838;
   margin-right: 8px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 24px;
+  }
 `;
 
 export const More = styled.div``;
 
-export const H2 = styled.h2`
-  font: 32px/34px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+const H2 = styled.h2`
+  font: 24px/28px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  @media only screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 34px;
+  }
 `;
 
 export const Arrow = styled.img``;
@@ -43,48 +52,55 @@ const BtnScroll = styled.a`
   height: 40px;
 `;
 
+const ScrollContainer = styled.div`
+  overflow-x: scroll;
+  overflow-y: hidden;
+`;
+
 export default () => (
   <Section>
-    <Inscription>
+    <Description>
       <H2>Popular reservations around the world</H2>
       <More>
         <SeeAll href="#">See All</SeeAll>
         <Arrow src={arrow} />
       </More>
-    </Inscription>
-    <div className="row">
-      <div className="col-lg-3">
-        <Card
-          img={chum}
-          name="Chumley's"
-          kitchen="speakeasy"
-          check="About $60 per person"
-        />
+    </Description>
+    <ScrollContainer>
+      <div className="row nowrap-xs">
+        <div className="col-xs-6 col-md-4 col-lg-3">
+          <Card
+            img={chum}
+            name="Chumley's"
+            kitchen="speakeasy"
+            check="About $60 per person"
+          />
+        </div>
+        <div className="col-xs-6 col-md-4 col-lg-3">
+          <Card
+            img={han}
+            name="Hanjan"
+            kitchen="korean gastropub"
+            check="About $50 per person"
+          />
+        </div>
+        <div className="col-xs-6 col-md-4 col-lg-3">
+          <Card
+            img={meat}
+            name="Prime Meats"
+            kitchen="german american"
+            check="About $55 per person"
+          />
+        </div>
+        <div className="col-xs-6 col-md-4 col-lg-3">
+          <Card
+            img={sea}
+            name="Seaprice"
+            kitchen="fine seafood"
+            check="About $70 per person"
+          />
+        </div>
       </div>
-      <div className="col-lg-3">
-        <Card
-          img={han}
-          name="Hanjan"
-          kitchen="korean gastropub"
-          check="About $50 per person"
-        />
-      </div>
-      <div className="col-lg-3">
-        <Card
-          img={meat}
-          name="Prime Meats"
-          kitchen="german american"
-          check="About $55 per person"
-        />
-      </div>
-      <div className="col-lg-3">
-        <Card
-          img={sea}
-          name="Seaprice"
-          kitchen="fine seafood"
-          check="About $70 per person"
-        />
-      </div>
-    </div>
+    </ScrollContainer>
   </Section>
 );

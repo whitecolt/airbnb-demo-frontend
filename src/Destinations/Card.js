@@ -2,16 +2,24 @@ import React from "react";
 import styled from "styled-components";
 
 const Img = styled.img`
-  width: 147px;
-  height: 220px;
+  width: 91px;
+  height: 138px;
+
+  @media only screen and (min-width: 768px) {
+    width: 176px;
+    height: 264px;
+  }
+
+  @media only screen and (min-width: 992px) {
+    width: 147px;
+    height: 220px;
+  }
 `;
 
-const DestCard = styled.div`
+const DestCard = styled.a`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-`;
-const Link = styled.a`
   text-decoration: none;
   color: #383838;
 `;
@@ -19,16 +27,18 @@ const Link = styled.a`
 const Name = styled.p`
   margin-top: 8px;
   color: #383838;
-  font: 15px/18px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: 12px/14px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  @media only screen and (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 `;
 
 export default props => {
   return (
-    <DestCard>
-      <Link href="#">
-        <Img src={props.img} alt={props.name} />
-        <Name>{props.name}</Name>
-      </Link>
+    <DestCard href="#">
+      <Img src={props.img} alt={props.name} />
+      <Name>{props.name}</Name>
     </DestCard>
   );
 };

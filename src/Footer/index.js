@@ -11,7 +11,8 @@ import {
   Inc,
   Info,
   Logo,
-  InfoLink
+  InfoLink,
+  Buttons
 } from "./styled";
 
 import logo from "./logo.svg";
@@ -25,18 +26,29 @@ export default function() {
       <div className="container">
         <FooterWrap>
           <div className="row">
-            <div className="col-lg-4">
-              <Form action="post">
-                <Select>
-                  <option>English</option>
-                </Select>
-                <Select>
-                  <option>United States dollar</option>
-                </Select>
-              </Form>
-            </div>
+            <div className="col-xs-12 col-md-4 col-lg-4">
+              <div className="row">
+                <div className="col-xs-6">
+                  <Buttons>
+                    <Select>
+                      <option>English</option>
+                    </Select>
+                  </Buttons>
+                </div>
 
-            <div className="col-lg-3">
+                <div className="col-xs-6">
+                  <Buttons>
+                    <Select>
+                      <option>United States dollar</option>
+                    </Select>
+                  </Buttons>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-md-2  col-lg-2">
               <Nav>
                 <NavTitle>Airbnb</NavTitle>
                 <Link href="#">About us</Link>
@@ -48,7 +60,7 @@ export default function() {
               </Nav>
             </div>
 
-            <div className="col-lg-3">
+            <div className="col-md-offset-1 col-md-2 col-lg-offset-1 col-lg-2">
               <Nav>
                 <NavTitle>Discover</NavTitle>
                 <Link href="#">Trust & Safety</Link>
@@ -61,7 +73,7 @@ export default function() {
               </Nav>
             </div>
 
-            <div className="col-lg-2">
+            <div className="col-md-offset-1 col-md-2 col-lg-offset-1 col-lg-2">
               <Nav>
                 <NavTitle>Hosting</NavTitle>
                 <Link href="#">Why Host</Link>

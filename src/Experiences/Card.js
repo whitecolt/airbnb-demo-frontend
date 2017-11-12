@@ -3,8 +3,17 @@ import styled from "styled-components";
 import star from "./star.svg";
 
 const Img = styled.img`
-  width: 225px;
-  height: 350px;
+  width: 144px;
+  height: 216px;
+
+  @media only screen and (min-width: 768px) {
+    width: 240px;
+    height: 346px;
+  }
+  @media only screen and (min-width: 992px) {
+    width: 230px;
+    height: 346px;
+  }
 `;
 
 const ExperienceCard = styled.div`
@@ -18,21 +27,28 @@ const Link = styled.a`
   color: #383838;
 `;
 
-const Name = styled.span`
-  font: 15px/18px "Circular Air Light", "Helvetica Neue", "Helvetica", "Arial",
-    sans-serif;
-`;
+const Name = styled.span``;
 
 export const Price = styled.span`
   display: inline-block;
-  font: 15px/18px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: 13px/15px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   margin-right: 3px;
+  @media only screen and (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 `;
 
 const Info = styled.p`
   margin-top: 8px;
   margin-bottom: 4px;
   flex-basis: 100%;
+  font: 13px/15px "Circular Air Light", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  @media only screen and (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 `;
 
 export const Stars = styled.img`

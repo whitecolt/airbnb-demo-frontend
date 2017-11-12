@@ -1,11 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import { Stars, Price } from "../Experiences/Card";
 import star from "./star.svg";
 
 const Img = styled.img`
-  width: 310px;
-  height: 204px;
+  width: 197px;
+  height: 156px;
+
+  @media (min-width: 768px) {
+    width: 304px;
+    height: 204px;
+  }
+
+  @media (min-width: 992px) {
+    width: 310px;
+    height: 204px;
+  }
 `;
 
 const HomesCard = styled.div`
@@ -19,23 +28,53 @@ const Link = styled.a`
   color: #383838;
 `;
 
+export const Price = styled.span`
+  display: inline-block;
+  font: 13px/15px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  margin-right: 3px;
+  @media only screen and (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
+`;
+
+export const Stars = styled.img`
+  width: 76px;
+  height: 12px;
+  margin-right: 8px;
+`;
+
 const Name = styled.span`
-  font: 15px/18px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font: 13px/15px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  @media only screen and (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 `;
 
 const Info = styled.p`
   margin-top: 8px;
   margin-bottom: 2px;
   flex-basis: 100%;
+  font: 13px/15px "Circular Air Light", "Helvetica Neue", "Helvetica", "Arial",
+    sans-serif;
+  @media only screen and (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 `;
 
 const Details = styled.p`
   margin-top: 2px;
-  font: 15px/18px "Circular Air Light", "Helvetica Neue", "Helvetica", "Arial",
+  font: 12px/14px "Circular Air Light", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
   color: #383838;
   margin-bottom: 8px;
   flex-basis: 100%;
+  @media only screen and (min-width: 768px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 `;
 
 const Access = styled.span`

@@ -9,27 +9,43 @@ import btn from "./button.svg";
 import nextPage from "./next-page.svg";
 
 const Section = styled.section`
-  margin-top: 48px;
-  margin-bottom: 24px;
+  margin-top: 36px;
+  margin-bottom: 16px;
+  @media only screen and (min-width: 768px) {
+    margin-top: 36px;
+    margin-bottom: 24px;
+  }
+`;
+const H2 = styled.h2`
+  font: 24px/28px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 32px;
+    line-height: 34px;
+  }
 `;
 
-export const H2 = styled.h2`
-  font: 32px/34px "Circular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-`;
-
-export const Inscription = styled.div`
+export const Description = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+  @media only screen and (min-width: 768px) {
+    margin-bottom: 24px;
+  }
 `;
 
 export const SeeAll = styled.a`
   text-decoration: none;
-  font: 14px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
+  font: 12px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
   color: #383838;
   margin-right: 8px;
+
+  @media only screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 24px;
+  }
 `;
 
 export const More = styled.div``;
@@ -44,49 +60,56 @@ export const BtnScroll = styled.a`
   height: 40px;
 `;
 
+const ScrollContainer = styled.div`
+  overflow-x: scroll;
+  overflow-y: hidden;
+`;
+
 export default () => (
   <Section>
-    <Inscription>
+    <Description>
       <H2>Homes</H2>
       <More>
         <SeeAll href="#">See All</SeeAll>
         <Arrow src={arrow} />
       </More>
-    </Inscription>
-    <div className="row">
-      <div className="col-lg-4">
-        <Card
-          name="La Salentina, see, nature & relax"
-          img={salentina}
-          price="$82"
-          access="Entire house"
-          beds="9 beds"
-          rank="97  Superhost"
-        />
+    </Description>
+    <ScrollContainer>
+      <div className="row nowrap-xs">
+        <div className="col-xs-8 col-md-5 col-lg-4">
+          <Card
+            name="La Salentina, see, nature & relax"
+            img={salentina}
+            price="$82"
+            access="Entire house"
+            beds="9 beds"
+            rank="97  Superhost"
+          />
+        </div>
+        <div className="col-xs-8 col-md-5 col-lg-4">
+          <Card
+            name="Your private 3 bedr. riad and exclusi..."
+            img={exclusive}
+            price="$82"
+            access="Entire house"
+            beds="5 beds"
+            rank="161  Superhost"
+          />
+        </div>
+        <div className="col-xs-8 col-md-5 col-lg-4">
+          <Card
+            name="Dreamy Tropical Tree House"
+            img={dreamy}
+            price="$200"
+            access="Entire treehouse"
+            beds="1 bed"
+            rank="364  Superhost"
+          />
+        </div>
       </div>
-      <div className="col-lg-4">
-        <Card
-          name="Your private 3 bedr. riad and exclusi..."
-          img={exclusive}
-          price="$82"
-          access="Entire house"
-          beds="5 beds"
-          rank="161  Superhost"
-        />
-      </div>
-      <div className="col-lg-4">
-        <Card
-          name="Dreamy Tropical Tree House"
-          img={dreamy}
-          price="$200"
-          access="Entire treehouse"
-          beds="1 bed"
-          rank="364  Superhost"
-        />
-      </div>
-    </div>
-    <BtnScroll href="#">
-      <img src={nextPage} alt="scroll" />
-    </BtnScroll>
+      <BtnScroll href="#">
+        <img src={nextPage} alt="scroll" />
+      </BtnScroll>
+    </ScrollContainer>
   </Section>
 );
