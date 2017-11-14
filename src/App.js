@@ -1,27 +1,20 @@
 import React, { Component } from "react";
-import Header from "./Header";
-import Explore from "./Explore";
-import Experiences from "./Experiences";
-import Homes from "./Homes";
-import Reservations from "./Reservations";
-import Destinations from "./Destinations";
-import Footer from "./Footer";
+import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+
 import "./App.css";
 import styled from "styled-components";
+
+import Landing from "./Landing";
+import Homes from "./Homes";
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <Header />
-        <div className="container">
-          <Explore />
-          <Experiences />
-          <Homes />
-          <Reservations />
-          <Destinations />
-        </div>
-        <Footer />
+      <div className="container">
+        <BrowserRouter>
+          <Route path="/" component={Landing} />
+          {/* <Route path="/homes" component={Homes} /> */}
+        </BrowserRouter>
       </div>
     );
   }
