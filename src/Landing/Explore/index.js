@@ -34,14 +34,19 @@ export default function() {
       <Wrapper>
         <div className="row nowrap-xs">
           <div className="col-xs-6 col-sm-4 col-md-5 col-lg-4">
-            <Card name="Homes" to="" img={apparts} />
+            <Card link="/homes" name="Homes" to="" img={apparts} />
           </div>
 
           <div className="col-xs-6 col-sm-4 col-md-5 col-lg-4">
-            <Card name="Experiences" to="" img={boat} />
+            <Card link="/experiences" name="Experiences" to="" img={boat} />
           </div>
           <div className="col-xs-6 col-sm-4 col-md-5 col-lg-4">
-            <Card name="Restaurants" to="" img={restaurants} />
+            <Card
+              link="/restaurants"
+              name="Restaurants"
+              to=""
+              img={restaurants}
+            />
           </div>
         </div>
       </Wrapper>

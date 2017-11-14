@@ -35,7 +35,7 @@ const ExploreCard = styled.a`
 
 export default props => {
   return (
-    <ExploreCard href="#">
+    <ExploreCard href={props.link}>
       <Img src={props.img} alt={props.name} />
       <ExploreTitle>{props.name}</ExploreTitle>
     </ExploreCard>

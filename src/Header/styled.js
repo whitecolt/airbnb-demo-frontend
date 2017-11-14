@@ -10,7 +10,7 @@ export const Header = styled.header`
   padding-top: 16px;
   padding-bottom: 16px;
   box-shadow: 0 1px 0 0 rgba(72, 72, 72, 0.08);
-  border-bottom: 1px solid rgba(72, 72, 72, 0.3);
+  border-bottom: 0.5px solid rgba(72, 72, 72, 0.3);
 `;
 
 export const Wrap = styled.div`
