@@ -16,6 +16,7 @@ const Button = styled.button`
 
 const Filters = styled.div`
   margin-top: 12px;
+  margin-bottom: 24px;
   padding-bottom: 12px;
   border-bottom: 0.5px solid rgba(72, 72, 72, 0.3);
   box-shadow: 0 0.5px 0 0 rgba(72, 72, 72, 0.08);
