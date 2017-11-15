@@ -3,6 +3,8 @@ import styled from "styled-components";
 import Header from "../Header";
 import Filters from "./Filters";
 import Card from "./Card";
+import Paginator from "./Paginator";
+
 import center from "./center.png";
 import dreamy from "./dreamy.png";
 import exclusive from "./exclusive.png";
@@ -89,6 +91,7 @@ export default () => (
               rank="221  Superhost"
             />
           </CardWrap>
+          <Paginator />
         </div>
       </div>
     </div>
