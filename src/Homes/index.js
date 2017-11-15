@@ -1,9 +1,11 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+
 import Header from "../Header";
 import Filters from "./Filters";
 import Card from "./Card";
 import Paginator from "./Paginator";
+import Footer from "./Footer";
 
 import center from "./center.png";
 import dreamy from "./dreamy.png";
@@ -92,6 +94,7 @@ export default () => (
             />
           </CardWrap>
           <Paginator />
+          <Footer />
         </div>
       </div>
     </div>
