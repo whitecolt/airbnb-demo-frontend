@@ -1,6 +1,10 @@
 import React from "react";
 import styled from "styled-components";
+
 import Card from "./Card";
+// import NextCard from "../../UI";
+
+import next from "./next-page.svg";
 import forest from "./Forest2x.png";
 import whale from "./Whale2x.png";
 import mountain from "./Mountain2x.png";
@@ -15,6 +19,29 @@ const H2 = styled.h2`
     line-height: 34px;
   }
 `;
+
+export const NextContainer = styled.div`position: relative;`;
+
+export const NextCard = styled.button`
+  display: none;
+
+  @media only screen and (min-width: 992px) {
+    display: block;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    position: absolute;
+    right: -20px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background: url(${next}) no-repeat 0 0;
+    background-size: contain;
+  }
+`;
+
+const Next = NextCard.extend`top: 155px;`;
 
 export const SeeAll = styled.a`
   text-decoration: none;
@@ -54,52 +81,60 @@ const Description = styled.div`
   }
 `;
 
-const ScrollContainer = styled.div`overflow-x: scroll;`;
+const ScrollContainer = styled.div`
+  overflow-x: scroll;
+  position: relative;
+`;
 
-export default () => (
-  <Section>
-    <Description>
-      <H2>Experiences</H2>
-      <More>
-        <SeeAll href="#">See All</SeeAll>
-        <Arrow src={arrow} />
-      </More>
-    </Description>
-    <ScrollContainer>
-      <div className="row nowrap-xs">
-        <div className="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-          <Card
-            name="Forest therapy"
-            img={forest}
-            price="$29"
-            rating="44 reviews"
-          />
-        </div>
-        <div className="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-          <Card
-            name="Whale watching"
-            img={whale}
-            price="$69"
-            rating="46 reviews"
-          />
-        </div>
-        <div className="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-          <Card
-            name="Table Mountain Summit, Cable Car Down"
-            img={mountain}
-            price="$69"
-            rating="44 reviews"
-          />
-        </div>
-        <div className="col-xs-6 col-sm-4 col-md-4 col-lg-3">
-          <Card
-            name="Salsa Night"
-            img={salsa}
-            price="$50"
-            rating="44 reviews"
-          />
-        </div>
-      </div>
-    </ScrollContainer>
-  </Section>
-);
+export default () => {
+  return (
+    <Section>
+      <Description>
+        <H2>Experiences</H2>
+        <More>
+          <SeeAll href="#">See All</SeeAll>
+          <Arrow src={arrow} />
+        </More>
+      </Description>
+      <NextContainer>
+        <ScrollContainer>
+          <div className="row nowrap-xs">
+            <div className="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+              <Card
+                name="Forest therapy"
+                img={forest}
+                price="$29"
+                rating="44 reviews"
+              />
+            </div>
+            <div className="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+              <Card
+                name="Whale watching"
+                img={whale}
+                price="$69"
+                rating="46 reviews"
+              />
+            </div>
+            <div className="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+              <Card
+                name="Table Mountain Summit, Cable Car Down"
+                img={mountain}
+                price="$69"
+                rating="44 reviews"
+              />
+            </div>
+            <div className="col-xs-6 col-sm-4 col-md-4 col-lg-3">
+              <Card
+                name="Salsa Night"
+                img={salsa}
+                price="$50"
+                rating="44 reviews"
+              />
+            </div>
+          </div>
+        </ScrollContainer>
+        <Next />
+      </NextContainer>
+    </Section>
+  );
+};

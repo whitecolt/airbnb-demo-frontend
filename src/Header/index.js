@@ -17,7 +17,7 @@ export default function() {
       <div className="container">
         <Wrap>
           <LogoSearch>
-            <a href="#">
+            <a href="/">
               <img src={logo} alt="" />
             </a>
             <MenuBtn />

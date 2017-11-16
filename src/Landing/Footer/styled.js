@@ -135,6 +135,7 @@ export const InfoLink = styled.a`
   color: #636363;
   font: 12px/14px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
+  white-space: nowrap;
 
   @media only screen and (min-width: 992px) {
     margin-right: 16px;

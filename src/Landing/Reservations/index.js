@@ -1,11 +1,13 @@
 import React from "react";
 import styled from "styled-components";
+
 import Card from "./Card";
 import arrow from "./Arrow.svg";
 import chum from "./Chumleys2x.png";
 import han from "./Hanjan2x.png";
 import meat from "./Primemeats2x.png";
 import sea from "./Seaprice2x.png";
+import next from "./next-page.svg";
 
 const Section = styled.section`
   margin-top: 48px;
@@ -18,6 +20,29 @@ export const Description = styled.div`
   align-items: center;
   margin-bottom: 24px;
 `;
+
+export const NextContainer = styled.div`position: relative;`;
+
+export const NextCard = styled.button`
+  display: none;
+
+  @media only screen and (min-width: 992px) {
+    display: block;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    position: absolute;
+    right: -20px;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    background: url(${next}) no-repeat 0 0;
+    background-size: contain;
+  }
+`;
+
+const Next = NextCard.extend`top: 70px;`;
 
 export const SeeAll = styled.a`
   text-decoration: none;
@@ -45,14 +70,6 @@ const H2 = styled.h2`
 
 export const Arrow = styled.img``;
 
-const BtnScroll = styled.a`
-  position: absolute;
-  top: 1050px;
-  left: 74%;
-  width: 40px;
-  height: 40px;
-`;
-
 const ScrollContainer = styled.div`
   overflow-x: scroll;
   overflow-y: hidden;
@@ -67,41 +84,44 @@ export default () => (
         <Arrow src={arrow} />
       </More>
     </Description>
-    <ScrollContainer>
-      <div className="row nowrap-xs">
-        <div className="col-xs-6 col-md-4 col-lg-3">
-          <Card
-            img={chum}
-            name="Chumley's"
-            kitchen="speakeasy"
-            check="About $60 per person"
-          />
+    <NextContainer>
+      <ScrollContainer>
+        <div className="row nowrap-xs">
+          <div className="col-xs-6 col-md-4 col-lg-3">
+            <Card
+              img={chum}
+              name="Chumley's"
+              kitchen="speakeasy"
+              check="About $60 per person"
+            />
+          </div>
+          <div className="col-xs-6 col-md-4 col-lg-3">
+            <Card
+              img={han}
+              name="Hanjan"
+              kitchen="korean gastropub"
+              check="About $50 per person"
+            />
+          </div>
+          <div className="col-xs-6 col-md-4 col-lg-3">
+            <Card
+              img={meat}
+              name="Prime Meats"
+              kitchen="german american"
+              check="About $55 per person"
+            />
+          </div>
+          <div className="col-xs-6 col-md-4 col-lg-3">
+            <Card
+              img={sea}
+              name="Seaprice"
+              kitchen="fine seafood"
+              check="About $70 per person"
+            />
+          </div>
         </div>
-        <div className="col-xs-6 col-md-4 col-lg-3">
-          <Card
-            img={han}
-            name="Hanjan"
-            kitchen="korean gastropub"
-            check="About $50 per person"
-          />
-        </div>
-        <div className="col-xs-6 col-md-4 col-lg-3">
-          <Card
-            img={meat}
-            name="Prime Meats"
-            kitchen="german american"
-            check="About $55 per person"
-          />
-        </div>
-        <div className="col-xs-6 col-md-4 col-lg-3">
-          <Card
-            img={sea}
-            name="Seaprice"
-            kitchen="fine seafood"
-            check="About $70 per person"
-          />
-        </div>
-      </div>
-    </ScrollContainer>
+      </ScrollContainer>
+      <Next />
+    </NextContainer>
   </Section>
 );

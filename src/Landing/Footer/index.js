@@ -90,7 +90,7 @@ export default function() {
                   <Logo src={logo} alt="logo.svg" /> © Airbnb Inc.
                 </Inc>
               </div>
-              <div className="col-md-5">
+              <div className="col-md-5 col-lg-4">
                 <Info>
                   <InfoLink href="#">Terms</InfoLink>
                   <InfoLink href="#">Privacy</InfoLink>
