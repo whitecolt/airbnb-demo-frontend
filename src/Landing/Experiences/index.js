@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import Card from "./Card";
-// import NextCard from "../../UI";
 
 import next from "./next-page.svg";
 import forest from "./Forest2x.png";
@@ -84,6 +83,11 @@ const Description = styled.div`
 const ScrollContainer = styled.div`
   overflow-x: scroll;
   position: relative;
+  margin: 0 -8px;
+  padding: 2px 8px;
+  @media only screen and (min-width: 992px) {
+    overflow-x: auto;
+  }
 `;
 
 export default () => {

@@ -99,14 +99,13 @@ export const Rank = styled.span`
 
 export default props => {
   return (
-    <Card>
-      <Link href={props.link}>
-        <Img src={props.img} alt={props.name} />
-        <Info>
-          <Price>{props.price}</Price>
-          <Name>{props.name}</Name>
-        </Info>
-      </Link>
+    <Card href={props.link}>
+      <Img src={props.img} alt={props.name} />
+      <Info>
+        <Price>{props.price}</Price>
+        <Name>{props.name}</Name>
+      </Info>
+
       <Details>
         <Access>{props.access}</Access>
         <Beds>{props.beds}</Beds>

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Img = styled.img`
   width: 100%;
@@ -35,7 +36,7 @@ const ExploreCard = styled.a`
 
 export default props => {
   return (
-    <ExploreCard href={props.link}>
+    <ExploreCard>
       <Img src={props.img} alt={props.name} />
       <ExploreTitle>{props.name}</ExploreTitle>
     </ExploreCard>

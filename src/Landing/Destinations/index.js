@@ -57,6 +57,11 @@ const H2 = styled.h2`
 const ScrollContainer = styled.div`
   overflow-x: scroll;
   overflow-y: hidden;
+  margin: 0 -8px;
+  padding: 2px 8px;
+  @media only screen and (min-width: 992px) {
+    overflow-x: auto;
+  }
 `;
 
 export default () => (

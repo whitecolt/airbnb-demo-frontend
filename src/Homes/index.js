@@ -22,7 +22,7 @@ export default () => (
     <Filters />
     <div className="container">
       <div className="row">
-        <div className="col-xs-12">
+        <div className="col-xs-12 col-md-6">
           <CardWrap>
             <Card
               name="La Salentina, see, nature & relax"
@@ -34,7 +34,7 @@ export default () => (
             />
           </CardWrap>
         </div>
-        <div className="col-xs-12">
+        <div className="col-xs-12 col-md-6">
           <CardWrap>
             <Card
               name="Your private 3 bedr. riad and exclusi..."
@@ -46,7 +46,7 @@ export default () => (
             />
           </CardWrap>
         </div>
-        <div className="col-xs-12">
+        <div className="col-xs-12 col-md-6">
           <CardWrap>
             <Card
               name="Dreamy Tropical Tree House"
@@ -58,7 +58,7 @@ export default () => (
             />
           </CardWrap>
         </div>
-        <div className="col-xs-12">
+        <div className="col-xs-12 col-md-6">
           <CardWrap>
             <Card
               name="Best location old town luxury loft"
@@ -70,7 +70,7 @@ export default () => (
             />
           </CardWrap>
         </div>
-        <div className="col-xs-12">
+        <div className="col-xs-12 col-md-6">
           <CardWrap>
             <Card
               name="Lusuoso. Vista incantevolve"
@@ -82,7 +82,7 @@ export default () => (
             />
           </CardWrap>
         </div>
-        <div className="col-xs-12">
+        <div className="col-xs-12 col-md-6">
           <CardWrap>
             <Card
               name="In the historical centre of Leecce"
@@ -93,9 +93,9 @@ export default () => (
               rank="221  Superhost"
             />
           </CardWrap>
-          <Paginator />
-          <Footer />
         </div>
+        <Paginator />
+        <Footer />
       </div>
     </div>
   </div>

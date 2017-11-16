@@ -1,10 +1,16 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+const Paginator = styled.div`
+  width: 100%;
+  text-align: center;
+  margin-bottom: 40px;
+`;
+
 const Wrap = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   margin-top: 18px;
   margin-bottom: 15px;
 `;
@@ -13,6 +19,7 @@ const Link = styled.a`
   display: inline-block;
   width: 32px;
   height: 32px;
+  margin-right: 22px;
 
   text-decoration: none;
   text-align: center;
@@ -40,28 +47,21 @@ const Amount = styled.p`
   margin-bottom: 24px;
 `;
 
-const NextButton = styled.a``;
-
 export default props => {
   return (
     <div className="container">
-      <div className="row">
-        <div className="col-xs-12">
-          <Wrap>
-            <CurrentLink href="#">1</CurrentLink>
-            <Link href="#">2</Link>
-            <Link href="#">3</Link>
-            <Link href="#">...</Link>
-            <Link href="#">17</Link>
-            <NextLink href="#">></NextLink>
-          </Wrap>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-xs-12">
-          <Amount>1 – 18 of 300+ Rentals</Amount>
-        </div>
-      </div>
+      <Paginator>
+        <Wrap>
+          <CurrentLink href="#">1</CurrentLink>
+          <Link href="#">2</Link>
+          <Link href="#">3</Link>
+          <Link href="#">...</Link>
+          <Link href="#">17</Link>
+          <NextLink href="#">></NextLink>
+        </Wrap>
+
+        <Amount>1 – 18 of 300+ Rentals</Amount>
+      </Paginator>
     </div>
   );
 };

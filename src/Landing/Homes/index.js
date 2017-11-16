@@ -82,6 +82,11 @@ export const Arrow = styled.img``;
 const ScrollContainer = styled.div`
   overflow-x: auto;
   overflow-y: hidden;
+  margin: 0 -8px;
+  padding: 2px 8px;
+  @media only screen and (min-width: 992px) {
+    overflow-x: auto;
+  }
 `;
 
 export default () => {
