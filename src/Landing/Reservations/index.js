@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 import Card from "./Card";
-import arrow from "./Arrow.svg";
+import arrow from "./arrow.svg";
 import chum from "./Chumleys2x.png";
 import han from "./Hanjan2x.png";
 import meat from "./Primemeats2x.png";

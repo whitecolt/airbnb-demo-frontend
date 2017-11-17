@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 import Card from "./Card";
 
@@ -42,8 +43,10 @@ export const NextCard = styled.button`
 
 const Next = NextCard.extend`top: 155px;`;
 
-export const SeeAll = styled.a`
-  text-decoration: none;
+export const Link = styled(NavLink)`text-decoration: none;`;
+
+export const SeeAll = styled.span`
+  display: inline-block;
   font: 12px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
   color: #383838;
@@ -96,8 +99,10 @@ export default () => {
       <Description>
         <H2>Experiences</H2>
         <More>
-          <SeeAll href="#">See All</SeeAll>
-          <Arrow src={arrow} />
+          <Link to="/experiences">
+            <SeeAll>See All</SeeAll>
+            <Arrow src={arrow} />
+          </Link>
         </More>
       </Description>
       <NextContainer>
