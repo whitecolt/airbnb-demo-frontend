@@ -1,9 +1,12 @@
 import React from "react";
 
+import { Link } from "react-router-dom";
+
+import Card from "../../Homes/Card";
+
 import next from "./next-page.svg";
 import styled from "styled-components";
 import arrow from "./Arrow.svg";
-import Card from "../../Homes/Card";
 import dreamy from "./Dreamy2x.png";
 import exclusive from "./Exclusive2x.png";
 import salentina from "./Salentina2x.png";
@@ -62,7 +65,7 @@ export const Description = styled.div`
   }
 `;
 
-export const SeeAll = styled.a`
+export const SeeAll = styled(Link)`
   text-decoration: none;
   font: 12px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
@@ -95,7 +98,7 @@ export default () => {
       <Description>
         <H2>Homes</H2>
         <More>
-          <SeeAll href="#">See All</SeeAll>
+          <SeeAll to="/homes">See All</SeeAll>
           <Arrow src={arrow} />
         </More>
       </Description>

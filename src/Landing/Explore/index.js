@@ -21,7 +21,7 @@ const H1 = styled.h1`
 const Section = styled.section``;
 
 const Wrapper = styled.div`
-  overflow-x: scroll;
+  overflow-x: auto;
 
   @media (min-width: 992px) {
     overflow-x: hidden;

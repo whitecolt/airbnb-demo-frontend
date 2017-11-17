@@ -5,6 +5,7 @@ import {
   Wrap,
   Input,
   LogoSearch,
+  LogoPic,
   Nav,
   MenuLink,
   MenuBtn
@@ -33,7 +34,7 @@ export default function() {
           <Wrap>
             <LogoSearch>
               <a href="/">
-                <img src={logo} alt="" />
+                <LogoPic src={logo} alt="airbnb-logo-svg" />
               </a>
               <MenuBtn />
               <Input type="text" placeholder="Try &quot;Miami&quot;" />

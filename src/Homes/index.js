@@ -36,6 +36,7 @@ export default () => (
             <div className="col-xs-12 col-md-6 col-lg-6">
               <CardWrap>
                 <Card
+                  link="#"
                   name="La Salentina, see, nature & relax"
                   img={salentina}
                   price="$82"
@@ -48,6 +49,7 @@ export default () => (
             <div className="col-xs-12 col-md-6 col-lg-6">
               <CardWrap>
                 <Card
+                  link="#"
                   name="Your private 3 bedr. riad and exclusi..."
                   img={exclusive}
                   price="$82"
@@ -60,6 +62,7 @@ export default () => (
             <div className="col-xs-12 col-md-6 col-lg-6">
               <CardWrap>
                 <Card
+                  link="#"
                   name="Dreamy Tropical Tree House"
                   img={dreamy}
                   price="$200"
@@ -72,6 +75,7 @@ export default () => (
             <div className="col-xs-12 col-md-6 col-lg-6">
               <CardWrap>
                 <Card
+                  link="#"
                   name="Best location old town luxury loft"
                   img={town}
                   price="$110"
@@ -84,6 +88,7 @@ export default () => (
             <div className="col-xs-12 col-md-6 col-lg-6">
               <CardWrap>
                 <Card
+                  link="#"
                   name="Lusuoso. Vista incantevolve"
                   img={vista}
                   price="$83"
@@ -96,6 +101,7 @@ export default () => (
             <div className="col-xs-12 col-md-6 col-lg-6">
               <CardWrap>
                 <Card
+                  link="#"
                   name="In the historical centre of Leecce"
                   img={center}
                   price="$200"

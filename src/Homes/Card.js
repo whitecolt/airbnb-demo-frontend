@@ -15,19 +15,6 @@ export const Img = styled.img`
   width: 100%;
   height: auto;
   object-fit: cover;
-
-  ${"" /* width: 304px;
-  height: 208px;
-
-  @media only screen and (min-width: 768px) {
-    width: 304px;
-    height: 204px;
-  }
-
-  @media only screen and (min-width: 992px) {
-    width: 310px;
-    height: 204px;
-  } */};
 `;
 
 export const Link = styled.a`

@@ -9,16 +9,25 @@ import Reservations from "./Reservations";
 import Destinations from "./Destinations";
 import Footer from "./Footer";
 
+const Main = styled.main`
+  padding-top: 80px;
+  @media only screen and (min-width: 768px) {
+    padding-top: 88px;
+  }
+`;
+
 export default () => (
   <div>
     <Header />
-    <div className="container">
-      <Explore />
-      <Experiences />
-      <Homes />
-      <Reservations />
-      <Destinations />
-    </div>
+    <Main>
+      <div className="container">
+        <Explore />
+        <Experiences />
+        <Homes />
+        <Reservations />
+        <Destinations />
+      </div>
+    </Main>
     <Footer />
   </div>
 );

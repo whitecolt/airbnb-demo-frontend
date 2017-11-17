@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import next from "./paginatornext.svg";
 
 const Paginator = styled.div`
   width: 100%;
@@ -38,6 +39,11 @@ const CurrentLink = Link.extend`
 
 const NextLink = Link.extend`border: 1px solid #008489;`;
 
+const Img = styled.img`
+  width: 32px;
+  height: 32px;
+`;
+
 const Amount = styled.p`
   text-align: center;
   color: #383838;
@@ -57,7 +63,9 @@ export default props => {
           <Link href="#">3</Link>
           <Link href="#">...</Link>
           <Link href="#">17</Link>
-          <NextLink href="#">></NextLink>
+          <Link href="#">
+            <Img src={next} alt="" />
+          </Link>
         </Wrap>
 
         <Amount>1 – 18 of 300+ Rentals</Amount>
