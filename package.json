@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "flexboxgrid2": "^7.0.0-alpha12",
+    "google-map-react": "^0.25.0",
     "micro": "latest",
     "normalize.css": "^7.0.0",
     "now": "^8.5.1",

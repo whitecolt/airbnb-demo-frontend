@@ -38,6 +38,28 @@
   }
 }
 
+.hidden-xs {
+  display: none;
+}
+
+@media only screen and (min-width: 576px) {
+  .hidden-sm {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hidden-md {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .hidden-lg {
+    display: none;
+  }
+}
+
 .row {
   box-sizing: border-box;
   display: -webkit-box;
