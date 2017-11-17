@@ -3,7 +3,7 @@ import arrowdown from "./arrow-down.svg";
 
 export const Footer = styled.footer`
   padding-top: 16px;
-  border-top: 1px solid rgba(72, 72, 72, 0.3);
+  border-top: 0.5px solid rgba(72, 72, 72, 0.3);
 
   @media only screen and (min-width: 768px) {
     padding-top: 48px;
@@ -17,7 +17,7 @@ export const FooterWrap = styled.div`
   }
 
   @media only screen and (min-width: 992px) {
-    padding-bottom: 36px;
+    padding-bottom: 48px;
   }
 `;
 
@@ -64,7 +64,7 @@ export const NavTitle = styled.span`
 
   @media only screen and (min-width: 992px) {
     margin-bottom: 16px;
-    font-size: 15 px;
+    font-size: 15px;
     line-height: 18px;
   }
 `;
@@ -78,7 +78,7 @@ export const Link = styled.a`
   @media only screen and (min-width: 992px) {
     font-size: 15px;
     line-height: 18px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
   }
 `;
 
@@ -88,9 +88,11 @@ export const Basement = styled.div`
   display: flex;
   padding-top: 35px;
   padding-bottom: 16px;
+  margin-left: -8px;
+  margin-right: -8px;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid rgba(72, 72, 72, 0.3);
+  border-top: 0.5px solid rgba(72, 72, 72, 0.3);
   flex-wrap: wrap;
 
   @media only screen and (min-width: 768px) {

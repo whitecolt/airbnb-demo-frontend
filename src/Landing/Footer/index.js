@@ -64,7 +64,7 @@ export default function() {
                 <Link href="#">Travel Credit</Link>
                 <Link href="#">Gift Cards</Link>
                 <Link href="#">Airbnb Citizen</Link>
-                <Link href="#">Bisiness Travel</Link>
+                <Link href="#">Business Travel</Link>
                 <Link href="#">Guidebooks</Link>
                 <Link href="#">Airbnbmag</Link>
               </Nav>

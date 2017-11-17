@@ -37,8 +37,6 @@ const CurrentLink = Link.extend`
   color: #ffffff;
 `;
 
-const NextLink = Link.extend`border: 1px solid #008489;`;
-
 const Img = styled.img`
   width: 32px;
   height: 32px;

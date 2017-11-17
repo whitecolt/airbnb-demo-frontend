@@ -1,25 +1,20 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import star from "../UI/star.svg";
 
-export const Card = styled.a`
+export const Card = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  text-decoration: none;
-  color: #383838;
+  margin-bottom: 24px;
 `;
 
 export const Img = styled.img`
   width: 100%;
   height: auto;
   object-fit: cover;
-`;
-
-export const Link = styled.a`
-  text-decoration: none;
-  color: #383838;
 `;
 
 export const Price = styled.span`
@@ -86,7 +81,7 @@ export const Rank = styled.span`
 
 export default props => {
   return (
-    <Card href={props.link}>
+    <Card>
       <Img src={props.img} alt={props.name} />
       <Info>
         <Price>{props.price}</Price>

@@ -29,6 +29,7 @@ export const Input = styled.input`
   background-position: 12px center;
   border: 1px solid rgba(72, 72, 72, 0.2);
   border-radius: 5px;
+  box-shadow: 1px 2px 4px rgba(196, 196, 196, 1);
   box-sizing: border-box;
 
   @media only screen and (min-width: 768px) {
