@@ -19,7 +19,7 @@ export default props => {
   return (
     <Wrap>
       <GoogleMapReact
-        bootstrapURLKeys={process.env.REACT_APP_MAP_KEY}
+        bootstrapURLKeys={{ key: process.env.REACT_APP_MAP_KEY }}
         defaultZoom={8}
         defaultCenter={{ lat: -41.718108, lng: 147.108374 }}
       />
