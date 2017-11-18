@@ -19,8 +19,7 @@ const Img = styled.img`
 const ExperienceCard = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-items: center
-  position: relative;
+  align-items: center;
 `;
 
 const Link = styled.a`

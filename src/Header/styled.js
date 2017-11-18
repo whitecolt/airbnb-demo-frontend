@@ -6,11 +6,8 @@ import arrow from "./arrowdown.svg";
 
 export const Header = styled.header`
   display: flex;
+
   align-items: center;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  box-shadow: 0 1px 0 0 rgba(72, 72, 72, 0.08);
-  border-bottom: 1px solid rgba(72, 72, 72, 0.3);
 `;
 
 export const Wrap = styled.div`
@@ -27,10 +24,12 @@ export const Input = styled.input`
   font: 14px/24px "Circular Air Book", "Helvetica Neue", "Helvetica", "Arial",
     sans-serif;
   background-image: url(${Findpicture});
+  background-size: 14px 15px;
   background-repeat: no-repeat;
   background-position: 12px center;
   border: 1px solid rgba(72, 72, 72, 0.2);
   border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(72, 72, 72, 0.08);
   box-sizing: border-box;
 
   @media only screen and (min-width: 768px) {
@@ -39,6 +38,7 @@ export const Input = styled.input`
     margin-left: 17px;
     font-weight: 16px;
     line-height: 24px;
+    background-size: 20px 21px;
   }
   @media only screen and (min-width: 992px) {
     width: 392px;
@@ -50,6 +50,11 @@ export const Input = styled.input`
 export const LogoSearch = styled.div`
   display: flex;
   align-items: center;
+`;
+
+export const LogoPic = styled.img`
+  width: 29px;
+  height: 31px;
 `;
 
 export const Nav = styled.nav`

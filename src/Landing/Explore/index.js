@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 import apparts from "./Apparts2x.png";
 import boat from "./Boat2x.png";
 import restaurants from "./Restaurants2x.png";
@@ -20,12 +21,14 @@ const H1 = styled.h1`
 const Section = styled.section``;
 
 const Wrapper = styled.div`
-  overflow-x: scroll;
+  overflow-x: auto;
 
   @media (min-width: 992px) {
     overflow-x: hidden;
   }
 `;
+
+export const Link = styled(NavLink)`text-decoration: none;`;
 
 export default function() {
   return (
@@ -34,14 +37,20 @@ export default function() {
       <Wrapper>
         <div className="row nowrap-xs">
           <div className="col-xs-6 col-sm-4 col-md-5 col-lg-4">
-            <Card name="Homes" to="" img={apparts} />
+            <Link to="/homes">
+              <Card name="Homes" img={apparts} />
+            </Link>
           </div>
 
           <div className="col-xs-6 col-sm-4 col-md-5 col-lg-4">
-            <Card name="Experiences" to="" img={boat} />
+            <Link to="/homes">
+              <Card name="Experiences" img={boat} />
+            </Link>
           </div>
           <div className="col-xs-6 col-sm-4 col-md-5 col-lg-4">
-            <Card name="Restaurants" to="" img={restaurants} />
+            <Link to="/homes">
+              <Card name="Restaurants" img={restaurants} />
+            </Link>
           </div>
         </div>
       </Wrapper>

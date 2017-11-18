@@ -64,7 +64,7 @@ export default function() {
                 <Link href="#">Travel Credit</Link>
                 <Link href="#">Gift Cards</Link>
                 <Link href="#">Airbnb Citizen</Link>
-                <Link href="#">Bisiness Travel</Link>
+                <Link href="#">Business Travel</Link>
                 <Link href="#">Guidebooks</Link>
                 <Link href="#">Airbnbmag</Link>
               </Nav>
@@ -90,7 +90,7 @@ export default function() {
                   <Logo src={logo} alt="logo.svg" /> © Airbnb Inc.
                 </Inc>
               </div>
-              <div className="col-md-5">
+              <div className="col-md-5 col-lg-4">
                 <Info>
                   <InfoLink href="#">Terms</InfoLink>
                   <InfoLink href="#">Privacy</InfoLink>
