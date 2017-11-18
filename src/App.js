@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
+import "react-dates/initialize";
 
 import "./App.css";
 import styled from "styled-components";
 
 import Landing from "./Landing";
-import Homes from "./Homes";
+import Homes from "./Homes/Content";
 
 const PageWrap = styled.div``;
 

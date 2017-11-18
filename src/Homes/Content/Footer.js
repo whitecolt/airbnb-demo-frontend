@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import map from "./map.svg";
-import MapButton from "../UI/MapButton";
+import MapButton from "../../UI/MapButton";
 
 const Info = styled.div`
   text-align: center;

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import star from "../UI/star.svg";
+import star from "../../UI/star.svg";
 
 export const Card = styled.div`
   display: flex;

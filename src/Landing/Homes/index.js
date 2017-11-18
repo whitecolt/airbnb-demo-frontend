@@ -2,7 +2,7 @@ import React from "react";
 
 import { NavLink } from "react-router-dom";
 
-import Card from "../../Homes/Card";
+import Card from "../../Homes/Content/Card";
 
 import next from "./next-page.svg";
 import styled from "styled-components";

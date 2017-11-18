@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import Header from "../Header";
+import Header from "../../Header";
 import Filters from "./Filters";
 import Card from "./Card";
 import GoogleMap from "./GoogleMap";
