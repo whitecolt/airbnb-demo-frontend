@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.ee83c4ed.css",
   "main.css.map": "static/css/main.ee83c4ed.css.map",
-  "main.js": "static/js/main.30e06022.js",
-  "main.js.map": "static/js/main.30e06022.js.map",
+  "main.js": "static/js/main.9828a41e.js",
+  "main.js.map": "static/js/main.9828a41e.js.map",
   "static\\media\\Apparts2x.png": "static/media/Apparts2x.9936422c.png",
   "static\\media\\Arrow.svg": "static/media/Arrow.d328ade6.svg",
   "static\\media\\Boat2x.png": "static/media/Boat2x.319adf44.png",
@@ -32,7 +32,6 @@
   "static\\media\\Whale2x.png": "static/media/Whale2x.d2a254e0.png",
   "static\\media\\airbnbLogo.svg": "static/media/airbnbLogo.7865b6df.svg",
   "static\\media\\arrow-down.svg": "static/media/arrow-down.8f9e2a6e.svg",
-  "static\\media\\arrow.svg": "static/media/arrow.d328ade6.svg",
   "static\\media\\arrowdown.svg": "static/media/arrowdown.c0544d3a.svg",
   "static\\media\\facebook.svg": "static/media/facebook.32b4abde.svg",
   "static\\media\\inputFind.svg": "static/media/inputFind.a417bef7.svg",
